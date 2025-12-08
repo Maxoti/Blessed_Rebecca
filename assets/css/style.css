@@ -1,0 +1,437 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            line-height: 1.8;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        /* Navigation */
+nav {
+    background: linear-gradient(135deg, #3b4ba8 0%, #2d3691 100%);
+    padding: 1.2rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1.25rem;      /* Increased size */
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+
+      /* HERO SECTION LIKE KASARANI GROUP OF SCHOOLS */
+.hero {
+    position: relative;
+    height: 85vh; /* similar height to KGS */
+    width: 100%;
+    background: url('../images/classroom.jpg') center/cover no-repeat; 
+    /* Replace with your image path */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Dark overlay like KGS */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(37, 57, 178, 0.55); 
+    /* uses Blessed Rebecca blue (your theme), not KGS green */
+    z-index: 1;
+}
+
+/* Centered hero content */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    max-width: 900px;
+}
+
+/* Large title */
+.hero-content h1 {
+    font-size: 3.8rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+/* Subtitle text */
+.hero-content p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    opacity: 0.92;
+}
+
+/* CTA button stays your current yellow */
+.hero-content .btn {
+    padding: 16px 45px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    background: #fbbf24;
+    color: #1e293b;
+}
+
+
+        .overlay {
+            position: relative;
+            z-index: 1;
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .overlay h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            letter-spacing: 1px;
+        }
+
+        .overlay p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            font-weight: 300;
+            opacity: 0.95;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 18px 50px;
+            background-color: #fbbf24;
+            color: #1e293b;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            background-color: #fcd34d;
+        }
+
+        /* Sub-header for other pages */
+        .sub-header {
+            background: linear-gradient(135deg, #3b4ba8 0%, #2d3691 100%);
+            color: white;
+            padding: 100px 40px 60px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .sub-header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 100px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section h2 {
+            font-size: 3.5rem;
+            margin-bottom: 3.5rem;
+            color: #2c3e50;
+            text-align: center;
+            font-weight: 700;
+            position: relative;
+            padding-bottom: 25px;
+        }
+
+        .section h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(135deg, #3b4ba8 0%, #2d3691 100%);
+            border-radius: 2px;
+        }
+
+        .section p {
+            font-size: 1.4rem;
+            line-height: 2.2;
+            color: #555;
+            margin-bottom: 2rem;
+            text-align: center;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section strong {
+            color: #3b4ba8;
+            font-weight: 700;
+        }
+
+        /* About Section */
+        #about {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        #about p {
+            background: #f8f9fa;
+            padding: 35px 40px;
+            border-radius: 15px;
+            border-left: 5px solid #3b4ba8;
+        }
+
+        /* Vision & Mission Section */
+        #vision-mission {
+            background: linear-gradient(to bottom, #f8f9fa 0%, #fff 100%);
+        }
+
+        #vision-mission p {
+            margin-bottom: 2.5rem;
+            background: white;
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            text-align: left;
+        }
+
+        #vision-mission p strong {
+            display: block;
+            font-size: 1.6rem;
+            margin-bottom: 12px;
+            color: #2c3e50;
+        }
+
+        /* Academics Section */
+        #academics {
+            background-color: #fff;
+        }
+
+        #academics ul,
+        .section ul,
+        .section ol {
+            list-style: none;
+            padding-left: 0;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .download-link {
+    color: #3b4ba8;
+    font-weight: 700;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
+.download-link:hover {
+    color: #fbbf24;
+    text-decoration: none;
+}
+        #academics li,
+        .section li {
+            padding: 25px 35px;
+            padding-left: 70px;
+            position: relative;
+            margin-bottom: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            text-align: left;
+            font-size: 1.35rem;
+            line-height: 2;
+            color: #555;
+        }
+
+        #academics li:hover,
+        .section li:hover {
+            background: #e9ecef;
+            transform: translateX(5px);
+        }
+
+        #academics li:before,
+        .section ul li:before {
+            content: "✓";
+            position: absolute;
+            left: 20px;
+            color: #3b4ba8;
+            font-weight: bold;
+            font-size: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .section ol {
+            counter-reset: item;
+        }
+
+        .section ol li {
+            padding-left: 60px;
+        }
+
+        .section ol li:before {
+            content: counter(item);
+            counter-increment: item;
+            position: absolute;
+            left: 20px;
+            color: #3b4ba8;
+            font-weight: bold;
+            font-size: 1.3rem;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #e9ecef;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* CTA Section */
+        #cta {
+            background: linear-gradient(135deg, #3b4ba8 0%, #2d3691 100%);
+            color: white;
+            text-align: center;
+        }
+
+        #cta h2 {
+            color: white;
+        }
+
+        #cta h2:after {
+            background: white;
+        }
+
+        #cta .btn {
+            background: #fbbf24;
+            color: #1e293b;
+        }
+
+        #cta .btn:hover {
+            background: #fcd34d;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 1.1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1rem;
+            }
+
+            nav a {
+                font-size: 0.95rem;
+            }
+
+            .overlay h1,
+            .sub-header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .overlay p {
+                font-size: 1.1rem;
+            }
+            
+            .section {
+                padding: 60px 20px;
+            }
+            
+            .section h2 {
+                font-size: 2.2rem;
+            }
+            
+            .section p,
+            .section li {
+                font-size: 1.05rem;
+            }
+            
+            #academics li,
+            .section li {
+                padding: 15px 20px;
+                padding-left: 50px;
+            }
+        }
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    background-color: #128c7e;
+    transform: scale(1.1);
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.4);
+}
+
+.whatsapp-float svg {
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+        
